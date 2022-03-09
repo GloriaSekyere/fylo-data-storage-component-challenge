@@ -14,5 +14,9 @@ $very-dark-blue: hsl(229, 57%, 11%);
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 14px
+  font-size: 14px;
+  background: {
+    image: url("../images/bg-mobile.png");
+    repeat: no-repeat;
+  }
 }

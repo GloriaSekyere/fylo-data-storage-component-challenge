@@ -4,15 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
   <title>Frontend Mentor | Fylo data storage component</title>
 </head>
 <body>
+  <main class="main">
 
-  You've used 815 GB of your storage
+    <div class="main__dataFiles">
+      <h1 class="main__header">Fylo</h1>
+      <div class="main__logo">
+        <img src="./images/logo.svg" alt="logo" aria-hidden="true">
+      </div>
+      <div class="main__icons">
+        <div class="main__icon">
+          <img src="./images/icon-document.svg" alt="document">
+        </div>
+        <div class="main__icon">
+          <img src="./images/icon-folder.svg" alt="document">
+        </div>
+        <div class="main__icon">
+          <img src="./images/icon-upload.svg" alt="document">
+        </div>
+      </div>
+    </div>
 
-  185 GB Left
+    <div class="main__storageInfo">
+      <p class="main__info">You've used 815 GB of your storage</p>
+      <div class="main__scaleDiv">
+        <div class="main__scale"></div>
+        <span>0 GB</span>
+        <span>1000 GB</span>
+      </div>
+      <div class="main__balance">
+        <p>185 <span>GB Left</span></p>
+      </div>
+    </div>
+
+  </main>
   
-  0 GB
-  1000 GB
 </body>
 </html>

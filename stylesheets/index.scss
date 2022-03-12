@@ -148,3 +148,27 @@ body {
     }
   }
 }
+
+@media screen and (min-width: 1440px) {
+  body {
+    background: {
+      color: $very-dark-blue;
+      image: url("../images/bg-desktop.png");
+      position: right bottom;
+    }
+  }
+
+  .main {
+    width: 875px;
+    display: flex;
+    justify-content: space-between;
+
+    &__files {
+      flex-basis: 30%;
+    }
+
+    &__storage {
+      flex-basis: 70%;
+    }
+  }
+}

@@ -139,12 +139,14 @@ body {
       &:first-child {
         color: $very-dark-blue;
         font-size: 30px;
-        
         margin-right: 7.5px;
       }
       &:nth-child(2) {
         color: $grayish-blue;
       }
+    }
+    svg {
+      display: none;
     }
   }
 }
@@ -162,13 +164,42 @@ body {
     width: 875px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 
     &__files {
-      flex-basis: 30%;
+      flex-basis: 37%;
+      margin-bottom: 0;
     }
 
     &__storage {
-      flex-basis: 70%;
+      flex-basis: 60%;
+      padding: 35px 30px;
+    }
+
+    &__info {
+      text-align: left;
+    }
+
+    &__balance {
+      width: 32.5%;
+      padding: 12.5px;
+      border-radius: 10px;
+      top: -50px;
+      right: 35px;
+      left: auto;
+      bottom: auto;
+      transform: translate(0%);
+      span {
+        &:first-child {
+          font-size: 35px;
+        }
+      }
+      svg {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
     }
   }
 }
